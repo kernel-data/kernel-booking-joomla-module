@@ -1,12 +1,12 @@
-# Kernel Booking Joomla! Plugin
+# Kernel Booking Joomla! Module
 
 Easily embed Kernel Booking directly into your Joomla! site.
 
-**NOTE: You must have a [Kernel Booking](https://www.kernelbooking.co.uk) account to use this plugin**
+**NOTE: You must have a [Kernel Booking](https://www.kernelbooking.co.uk) account to use this module**
 
 ## License
 
-The Kernel Booking Joomla! Plugin is licensed under the GPL v3 or later.
+The Kernel Booking Joomla! Module is licensed under the GPL v3 or later.
 
 ```
 This program is free software: you can redistribute it and/or modify

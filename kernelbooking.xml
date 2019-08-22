@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Kernel Booking</name>
+    <version>1.0.0</version>
+    <creationDate>August 2019</creationDate>
+    <author>Kernel Data Limited</author>
+    <authorEmail>info@kernel.co.uk</authorEmail>
+    <authorUrl>https://www.kernel.co.uk</authorUrl>
+    <copyright>Copyright © 2019 Kernel Data Limited - All Rights Reserved</copyright>
+    <license>GNU General Public License version 3 or later</license>
+    <description>
+        You can use this module to embed the Kernel Booking System (https://www.kernelbooking.co.uk). **NOTE: You must have an account with Kernel Booking for this plugin to work**
+    </description>
+    <scriptfile>installer.php</scriptfile>
+    <files>
+        <filename module="kernelbooking">kernelbooking.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="client"
+                        type="text"
+                        label="Client Alias"
+                        description="Your client alias is found in the URL when you are logged in to your Kernel Booking account."
+                        required="required"/>
+
+                <field
+                        name="page"
+                        type="list"
+                        label="Embed Type"
+                        description="Choose the page type that you want to embed."
+                        required="required"
+                        default="search">
+                    <option value="search">Search</option>
+                    <option value="view-booking">View Booking</option>
+                    <option value="new-booking">New Booking</option>
+                    <option value="detail">Room Detail</option>
+                    <option value="calendar">Room Calendar</option>
+                </field>
+
+                <field
+                        name="category_id"
+                        type="integer"
+                        label="Category ID (optional)"
+                        description="Enter the category ID to filter the embedded results by."/>
+
+                <field
+                        name="detail_id"
+                        type="integer"
+                        label="Room ID (optional)"
+                        description="Enter the category ID to filter the embedded results by."/>
+
+
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" priority="1" name="Kernel Booking Update Server">#</server>
+    </updateservers>
+</extension>
