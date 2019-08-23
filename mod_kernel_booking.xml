@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <extension type="module" version="3.1" client="site" method="upgrade">
     <name>Kernel Booking</name>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <creationDate>August 2019</creationDate>
     <author>Kernel Data Limited</author>
     <authorEmail>info@kernel.co.uk</authorEmail>
