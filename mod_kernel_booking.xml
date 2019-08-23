@@ -60,6 +60,6 @@
         </fields>
     </config>
     <updateservers>
-        <server type="extension" priority="1" name="Kernel Booking Update Server">#</server>
+        <server type="extension" priority="2" name="My Extension's Updates">https://raw.githubusercontent.com/kernel-data/kernel-booking-joomla-module/master/manifest.xml</server>
     </updateservers>
 </extension>
