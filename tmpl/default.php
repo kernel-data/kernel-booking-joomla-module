@@ -14,6 +14,16 @@
 
 defined('_JEXEC') or die;
 
+$detailID = $params->get('detail_id');
+if ($detailID == 0 || !in_array($params->get('page'), ['detail', 'calendar'])) {
+    $detailID = 'null';
+}
+
+$category = $params->get('category');
+if ($category == 0 || $params->get('page') != 'search') {
+    $category = 'null';
+}
+
 ?>
 
 <div id="kernel-booking" style="width: 100%; max-width: 100%"></div>
@@ -23,8 +33,8 @@ defined('_JEXEC') or die;
         client: '<?php echo $params->get('client'); ?>',
         el: '#kernel-booking',
         page: '<?php echo $params->get('page'); ?>',
-        detailid: '<?php echo $params->get('category_id'); ?>',
-        category: '<?php echo $params->get('detail_id'); ?>'
+        detailid: <?php echo $detailID; ?>,
+        category: <?php echo $category; ?>
     })
 </script>
 

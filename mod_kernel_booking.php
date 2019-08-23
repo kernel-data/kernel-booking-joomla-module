@@ -16,4 +16,4 @@ defined('_JEXEC') or die;
 
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
-require JModuleHelper::getLayoutPath('mod_kernelbooking', $params->get('layout', 'default'));
+require JModuleHelper::getLayoutPath('mod_kernel_booking', $params->get('layout', 'default'));
